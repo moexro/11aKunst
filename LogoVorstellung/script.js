@@ -1,7 +1,11 @@
 const vorstellungen = {
   MoritzHuemmer: {
-    firma: "Bergbahnen",
+    firma: "MHBergbahnenGmBH",
     text: "Mein Vorstellungstext",
+  },
+  KilianScheuerlein: {
+    firma: "KilianScheuerleinGmbh",
+    text: "Diese Baufirma hebt sich von allen anderen durch ihre innovativen Baumethoden ab. Denn wir bauen Häuser in wenigen Tagen durch gigantische 3D-Drucker – individuell, nachhaltig, günstig.",
   },
 };
 
@@ -28,4 +32,5 @@ function set() {
   });
 }
 
+localStorage.setItem("Firmen", JSON.stringify(vorstellungen));
 set();

@@ -39,6 +39,7 @@ body::before {
     url("../LogoVorstellung/images/background.jpg") no-repeat center center;
   background-size: cover;
   z-index: -10;
+  filter: brightness(1.5);
 }
 
 a {
@@ -68,7 +69,7 @@ a {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   max-width: 80%;
-  padding: 20px;
+  padding: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,17 +78,21 @@ a {
 #sec {
   padding-top: 10px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 36px auto;
+  padding: 32px;
 }
 
 .get-to-vorstellung-btn {
   margin: 10px;
-  padding: 10px;
+  padding: 16px;
   background: var(--btn);
   border-radius: 5px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
-  box-shadow: 4px 16px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 16px 16px 1px rgba(0, 0, 0, 0.15);
+  border: none;
+  width: 100%;
 }
