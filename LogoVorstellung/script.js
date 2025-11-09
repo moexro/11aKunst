@@ -8,9 +8,9 @@ const vorstellungen = {
     text: "Diese Baufirma hebt sich von allen anderen durch ihre innovativen Baumethoden ab. Denn wir bauen Häuser in wenigen Tagen durch gigantische 3D-Drucker – individuell, nachhaltig, günstig.",
   },
   LeaHeppenstiel: { 
-   firma: "mordsangst Podcast",
-   text: "Hi zusammen ich heiße Lea Heppenstiel und mache hier einen true Crime Podcast, bei mir gibt es jeden Freitag eine neue spannende Podcast Folge. Ihr könnt ihn überall hören wo es Podcast gibt. Es würde mich sehr freuen wenn ihr mal reinhört :)",
-  },
+  		firma: "mordsangst Podcast",
+ 		text: "Hi zusammen, ich heiße Lea Heppenstiel und mache hier einen True-Crime-Podcast. Bei mir gibt es jeden Freitag eine neue spannende Folge. Ihr könnt ihn überall hören, wo es Podcasts gibt. Es würde mich sehr freuen, wenn ihr mal reinhört :)",
+	},
 };
 
 let abgaben = 0;
