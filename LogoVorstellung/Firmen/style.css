@@ -25,6 +25,10 @@ body {
 body {
   overflow-y: auto;
   min-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Hintergrund bleibt stehen */
+  background-size: cover;       /* passt Bild an */
+  background-position: center;
 }
 
 a {
