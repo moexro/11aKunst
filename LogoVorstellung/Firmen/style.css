@@ -56,6 +56,10 @@ a {
 
 .container .logo {
   height: 64px;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Hintergrund bleibt stehen */
+  background-size: cover;       /* passt Bild an */
+  background-position: center;
 }
 
 .container {
