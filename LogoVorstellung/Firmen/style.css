@@ -1,7 +1,7 @@
 :root {
   --text: #fff;
   --container: rgba(255, 255, 255, 0.12);
-  --bg-img;
+  --bg-img: none;
 }
 
 html {
