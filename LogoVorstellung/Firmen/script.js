@@ -71,6 +71,5 @@ function set() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  localStorage.setItem("Firmen", JSON.stringify(vorstellungen));
   set();
 });
