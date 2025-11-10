@@ -2,9 +2,11 @@ const params = new URLSearchParams(window.location.search);
 const type = params.get("type");
 const firms = JSON.parse(localStorage.getItem("Firmen") || "{}");
 
-document.body.style.backgroundImage = `
-    linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)),
-    url("../Firmen/images/background_${type}.jpg")`;
+document.body.style.setProperty(
+  "--bg-img",
+  `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)),
+   url("../Firmen/images/background_${type}.jpg")`
+);
 
 
 const brand = document.querySelector("#topbar .brand");
