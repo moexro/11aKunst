@@ -1,6 +1,7 @@
 :root {
   --text: #fff;
   --container: rgba(255, 255, 255, 0.12);
+  --bg-img;
 }
 
 html {
@@ -18,7 +19,7 @@ body {
     Arial;
   color: var(--text);
   box-sizing: border-box;
-  text-shadow: 2px 2px 8dvi rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   margin-top: 50px;
 }
 
@@ -34,6 +35,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
+  background-image: var(--bg-img);
   background-repeat: no-repeat;
   background-attachment: fixed; /* Hintergrund bleibt stehen */
   background-size: cover;       /* passt Bild an */
