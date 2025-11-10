@@ -8,9 +8,9 @@ const vorstellungen = {
     text: "Diese Baufirma hebt sich von allen anderen durch ihre innovativen Baumethoden ab. Denn wir bauen Häuser in wenigen Tagen durch gigantische 3D-Drucker – individuell, nachhaltig, günstig.",
   },
   LeaHeppenstiel: { 
-  		firma: "mordsangst Podcast",
- 		text: "Hi zusammen, ich heiße Lea Heppenstiel und mache hier einen True-Crime-Podcast. Bei mir gibt es jeden Freitag eine neue spannende Folge. Ihr könnt ihn überall hören, wo es Podcasts gibt. Es würde mich sehr freuen, wenn ihr mal reinhört :)",
-	},
+    firma: "mordsangst Podcast",
+    text: "Hi zusammen, ich heiße Lea Heppenstiel und mache hier einen True-Crime-Podcast. Bei mir gibt es jeden Freitag eine neue spannende Folge. Ihr könnt ihn überall hören, wo es Podcasts gibt. Es würde mich sehr freuen, wenn ihr mal reinhört :)",
+  },
 };
 
 let abgaben = 0;
@@ -24,7 +24,7 @@ function set() {
 
     btn.type = "button";
     btn.className = "get-to-vorstellung-btn";
-    btn.id = key; // eindeutige ID pro Vorstellung
+    btn.id = key;
     btn.textContent = firmname;
 
     btn.addEventListener("click", () => {
@@ -34,20 +34,16 @@ function set() {
 
     container.appendChild(btn);
   });
-  
-  
-  document.addEventListener("DOMContentLoaded", () => {
-  const header = document.querySelector("header");
 
-  // Style des ::before-Pseudo-Elements auslesen
+  // Theme-Color anhand des body::before-Hintergrunds setzen
   const style = getComputedStyle(document.body, "::before");
-  const bg = style.backgroundImage; // enthält linear-gradient(...) + url(...)
+  const bg = style.backgroundImage;
   const urlMatch = bg.match(/url\(["']?(.+?)["']?\)/);
   if (!urlMatch) return;
 
   const imageUrl = urlMatch[1];
   const img = new Image();
-  img.crossOrigin = "Anonymous"; // wichtig, falls später externe Bilder kommen
+  img.crossOrigin = "Anonymous";
   img.src = imageUrl;
 
   img.onload = () => {
@@ -55,12 +51,12 @@ function set() {
     const ctx = canvas.getContext("2d");
 
     canvas.width = img.naturalWidth;
-    canvas.height = 1; // nur oberste Zeile
-
+    canvas.height = 1;
     ctx.drawImage(img, 0, 0, canvas.width, 1);
-    const data = ctx.getImageData(0, 0, canvas.width, 1).data;
 
+    const data = ctx.getImageData(0, 0, canvas.width, 1).data;
     let r = 0, g = 0, b = 0;
+
     for (let i = 0; i < data.length; i += 4) {
       r += data[i];
       g += data[i + 1];
@@ -72,10 +68,17 @@ function set() {
     g = Math.round(g / pixelCount);
     b = Math.round(b / pixelCount);
 
-    header.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    let meta = document.querySelector('meta[name="theme-color"]');
+    if (!meta) {
+      meta = document.createElement("meta");
+      meta.name = "theme-color";
+      document.head.appendChild(meta);
+    }
+    meta.setAttribute("content", `rgb(${r}, ${g}, ${b})`);
   };
-});
 }
 
-localStorage.setItem("Firmen", JSON.stringify(vorstellungen));
-set();
+document.addEventListener("DOMContentLoaded", () => {
+  localStorage.setItem("Firmen", JSON.stringify(vorstellungen));
+  set();
+});
