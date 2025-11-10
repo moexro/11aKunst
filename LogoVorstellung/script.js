@@ -34,6 +34,47 @@ function set() {
 
     container.appendChild(btn);
   });
+  
+  
+  document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector("header");
+
+  // Style des ::before-Pseudo-Elements auslesen
+  const style = getComputedStyle(document.body, "::before");
+  const bg = style.backgroundImage; // enthält linear-gradient(...) + url(...)
+  const urlMatch = bg.match(/url\(["']?(.+?)["']?\)/);
+  if (!urlMatch) return;
+
+  const imageUrl = urlMatch[1];
+  const img = new Image();
+  img.crossOrigin = "Anonymous"; // wichtig, falls später externe Bilder kommen
+  img.src = imageUrl;
+
+  img.onload = () => {
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+
+    canvas.width = img.naturalWidth;
+    canvas.height = 1; // nur oberste Zeile
+
+    ctx.drawImage(img, 0, 0, canvas.width, 1);
+    const data = ctx.getImageData(0, 0, canvas.width, 1).data;
+
+    let r = 0, g = 0, b = 0;
+    for (let i = 0; i < data.length; i += 4) {
+      r += data[i];
+      g += data[i + 1];
+      b += data[i + 2];
+    }
+
+    const pixelCount = data.length / 4;
+    r = Math.round(r / pixelCount);
+    g = Math.round(g / pixelCount);
+    b = Math.round(b / pixelCount);
+
+    header.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+  };
+});
 }
 
 localStorage.setItem("Firmen", JSON.stringify(vorstellungen));
