@@ -4,7 +4,7 @@ const firms = JSON.parse(localStorage.getItem("Firmen") || "{}");
 
 document.body.style.setProperty(
   "--bg-img",
-  `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)),
+  `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)),
    url("../Firmen/images/background_${type}.jpg")`
 );
 
