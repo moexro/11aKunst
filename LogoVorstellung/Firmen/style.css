@@ -1,7 +1,8 @@
 :root {
 	--container: rgba(255, 255, 255, 0.12);
 	--bg-img: none;
-  --text-color: none;
+	--text-color: none;
+	--bg-size: cover;
 }
 
 html {
@@ -38,7 +39,7 @@ body::before {
 	background-image: var(--bg-img);
 	background-repeat: no-repeat;
 	background-attachment: fixed; /* Hintergrund bleibt stehen */
-	background-size: contain; /* passt Bild an */
+	background-size: var(--bg-size); /* passt Bild an */
 	background-position: center;
 }
 
@@ -89,6 +90,7 @@ a {
 	text-align: center;
 	padding: 24px;
 	font-size: large;
+	white-space: pre-line;
 }
 
 #logo {
@@ -97,4 +99,13 @@ a {
 	background-size: contain; /* skaliert das Bild korrekt */
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+#back {
+	position: absolute;
+	bottom: 16px;
+	width: 100px;
+	z-index: 100;
+	color: var(--text-color);
+	width: 100%;
 }
