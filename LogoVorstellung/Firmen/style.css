@@ -94,8 +94,8 @@ a {
 }
 
 #logo {
-	width: 64px; /* Breite des Logos */
 	height: 64px; /* Höhe des Logos */
+	width: 128px;
 	background-size: contain; /* skaliert das Bild korrekt */
 	background-repeat: no-repeat;
 	background-position: center;

@@ -20,6 +20,25 @@ const vorstellungen = {
     Es würde mich sehr freuen, wenn ihr mal reinhört :)`,
 		bg: "contain",
 	},
+	LucaSolleder: {
+		firma: "SKII",
+		text: `Bei SKII dreht sich alles um Leidenschaft für den Schnee. Wir bieten dir hochwertige Ski, Skischuhe und Skizubehör von führenden Marken, damit du auf der Piste immer bestens ausgestattet bist. Ob du Anfänger oder Profi bist – bei uns findest du die passende Ausrüstung für deinen Stil und dein Können.
+
+		Unser Sortiment umfasst:
+
+	• Ski & Snowboards für jedes Terrain
+	• Skischuhe, Bindungen & Stöcke für maximalen Komfort und Kontrolle
+	• Helme, Brillen & Bekleidung für Sicherheit und Performance
+	• Pflege- & Servicetools, damit deine Ausrüstung in Topform bleibt
+
+Mit kompetenter Beratung, fairen Preisen und schneller Lieferung machen wir deinen nächsten Skitag noch besser. Entdecke jetzt unsere Angebote und erlebe den Winter mit SKII – Style. Kontrolle. Innovation.`,
+	},
+	JakobEirich: {
+		firma: "SK8",
+		text: `Willkommen bei SK8 ! Bei SK8 dreht sich alles um Kreativität, Freiheit und Style. Gestalte dein eigenes Skateboard – von klassischen Motiven bis zu modernen Designs. Ob du auf der Straße oder im Skatepark unterwegs bist, wir bieten dir hochwertige Decks, die so einzigartig sind wie du.
+			Unsere Mission: Dein Board, dein Statement.
+			Let‘s Roll!`,
+	},
 };
 
 let abgaben = 0;

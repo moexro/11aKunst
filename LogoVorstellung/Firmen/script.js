@@ -4,7 +4,7 @@ const firms = JSON.parse(localStorage.getItem("Firmen") || "{}");
 
 document.body.style.setProperty(
 	"--bg-img",
-	`linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)),
+	`linear-gradient(rgba(0,0,0,0.01), rgba(0,0,0,0.02)),
    url("../Firmen/images/background_${type}.jpg")`
 );
 
@@ -14,7 +14,22 @@ if (brand && firms[type] && firms[type].firma) {
 }
 
 const logo = document.getElementById("logo");
-logo.style.backgroundImage = `url("../Firmen/images/logo_${type}.jpg")`;
+
+async function setLogo(type) {
+	const exts = ["jpg", "PNG", "webp", "jpeg"];
+	const basePath = `../Firmen/images/logo_` + type;
+
+	for (const ext of exts) {
+		const url = `${basePath}.${ext}`;
+		const res = await fetch(url, { method: "GET" });
+		if (res.ok) {
+			logo.style.backgroundImage = `url(${url})`;
+			return;
+		}
+	}
+}
+
+setLogo(type);
 
 const text = document.getElementById("sec");
 text.textContent = firms[type].text;
