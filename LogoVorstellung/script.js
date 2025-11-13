@@ -39,6 +39,25 @@ Mit kompetenter Beratung, fairen Preisen und schneller Lieferung machen wir dein
 			Unsere Mission: Dein Board, dein Statement.
 			Let‘s Roll!`,
 	},
+	FelixBinner: {
+		firma: "Hoch- und Tiefbau Binner",
+		text: `Hoch- und Tiefbau Binner – Qualität, die Bestand hat.
+		Seit Generationen stehen wir für solides Handwerk, Verlässlichkeit und Präzision im Bauwesen. Ob Wohnbau, Gewerbeobjekt oder Infrastrukturprojekt – wir planen, bauen und realisieren mit Erfahrung, Verantwortung und technischem Know-how.
+		Unser Ziel: nachhaltige Bauwerke, die Werte schaffen und Vertrauen verdienen`,
+	},
+	FinnSchmitt: {
+		firma: "Schmitt & Partner",
+		text: `YOU HAVE RIGHTS - EXERCISE THEM
+		Willkommen bei Ihrer Kanzlei für Strafrecht in Karlburg
+		In unserer Kanzlei stehen Sie als Mandant im Mittelpunkt. Wir vertreten Sie engagiert und kompetent in sämtlichen Bereichen des Strafrechts – von der Beratung in Ermittlungsverfahren über die Verteidigung in Gerichtsprozessen bis hin zur Begleitung in allen Phasen des Strafverfahrens. Ihr Recht auf eine faire Behandlung und auf professionelle Verteidigung ist unser oberstes Anliegen.
+		Unser erfahrenes Team unterstützt Sie bei:
+		• Strafverteidigung: Wir vertreten Sie in allen Strafsachen, seien es Wirtschaftsstraftaten, Verkehrsdelikte, Betäubungsmittelstrafrecht oder andere strafbare Handlungen.
+		• Beratung bei Ermittlungsverfahren: Wir stehen Ihnen bereits in einem frühen Stadium zur Seite, prüfen Ihre Rechte und entwickeln gemeinsam die beste Verteidigungsstrategie.
+		• Opfervertretung im Strafverfahren: Auch Geschädigte eines Verbrechens finden bei uns rechtliche Unterstützung, um ihre Ansprüche geltend zu machen und ihre Interessen zu wahren.
+		• Internationale Strafrechtsfragen: Unsere Kanzlei berät und vertritt Mandanten auch in grenzüberschreitenden Fällen.
+		Wir legen besonderen Wert auf persönliche Betreuung, Diskretion und schnelle Reaktionszeiten. Unser Ziel ist es, für Sie Klarheit und Sicherheit in oft komplexen und belastenden Situationen zu schaffen. Vertrauen Sie auf unsere Expertise und unseren Einsatz für Ihre Rechte.
+		Kontaktieren Sie uns noch heute für eine erste Beratung. Wir beraten Sie verständlich, verständnisvoll und jederzeit professionell. `,
+	},
 };
 
 let abgaben = 0;
