@@ -20,6 +20,12 @@ const vorstellungen = {
     Es würde mich sehr freuen, wenn ihr mal reinhört :)`,
 		bg: "contain",
 	},
+	FelixBinner: {
+		firma: "Hoch- und Tiefbau Binner",
+		text: `Hoch- und Tiefbau Binner – Qualität, die Bestand hat.
+		Seit Generationen stehen wir für solides Handwerk, Verlässlichkeit und Präzision im Bauwesen. Ob Wohnbau, Gewerbeobjekt oder Infrastrukturprojekt – wir planen, bauen und realisieren mit Erfahrung, Verantwortung und technischem Know-how.
+		Unser Ziel: nachhaltige Bauwerke, die Werte schaffen und Vertrauen verdienen`,
+	},
 };
 
 let abgaben = 0;
