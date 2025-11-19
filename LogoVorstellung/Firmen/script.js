@@ -44,60 +44,58 @@ if (firms[type].bg) {
 	document.documentElement.style.setProperty("--bg-size", firms[type].bg);
 }
 
-function set() {
-	// Theme-Color anhand des body::before-Hintergrunds setzen
+async function set() {
 	const style = getComputedStyle(document.body, "::before");
 	const bg = style.backgroundImage;
 	const urlMatch = bg.match(/url\(["']?(.+?)["']?\)/);
 	if (!urlMatch) return;
 
-	const imageUrl = urlMatch[1];
-	const img = new Image();
-	img.crossOrigin = "Anonymous";
-	img.src = imageUrl;
-
-	img.onload = () => {
-		const canvas = document.createElement("canvas");
-		const ctx = canvas.getContext("2d");
-
-		canvas.width = img.naturalWidth;
-		canvas.height = 1;
-		ctx.drawImage(img, 0, 0, canvas.width, 1);
-
-		const data = ctx.getImageData(0, 0, canvas.width, 1).data;
-		let r = 0,
-			g = 0,
-			b = 0;
-
-		for (let i = 0; i < data.length; i += 16) {
-			r += data[i];
-			g += data[i + 1];
-			b += data[i + 2];
-		}
-
-		const pixelCount = data.length / 16;
-		r = Math.round(r / pixelCount);
-		g = Math.round(g / pixelCount);
-		b = Math.round(b / pixelCount);
-
-		const textColor = getContrastColor(r, g, b);
-		document.body.style.setProperty("--text-color", textColor);
-
-		const color = `rgb(${r}, ${g}, ${b})`;
-
-		let meta = document.querySelector('meta[name="theme-color"]');
-		if (!meta) {
-			meta = document.createElement("meta");
-			meta.name = "theme-color";
-			document.head.appendChild(meta);
-		}
-		meta.setAttribute("content", color);
-	};
+	const brightness = await getBrightness(urlMatch[1]);
+	const textColor = getContrastColor(brightness);
+	document.body.style.setProperty("--text-color", textColor);
 }
 
-function getContrastColor(r, g, b) {
-	// Wahrgenommene Helligkeit (nach ITU-R BT.601)
-	const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+function getBrightness(imageUrl) {
+	return new Promise((resolve, reject) => {
+		const img = new Image();
+		img.crossOrigin = "anonymous";
+		img.src = imageUrl;
+
+		img.onload = () => {
+			const canvas = document.createElement("canvas");
+			const ctx = canvas.getContext("2d");
+
+			canvas.width = img.naturalWidth;
+			canvas.height = img.naturalHeight;
+
+			ctx.drawImage(img, 0, 0);
+
+			const data = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+			let total = 0;
+			const pixelCount = data.length / 4;
+
+			for (let i = 0; i < data.length; i += 4) {
+				const r = data[i];
+				const g = data[i + 1];
+				const b = data[i + 2];
+
+				// Standard-Luminanz
+				const lum = 0.299 * r + 0.587 * g + 0.114 * b;
+				total += lum;
+			}
+
+			// Durchschnitt 0–255
+			const avgBrightness = total / pixelCount;
+			console.log(avgBrightness);
+
+			resolve(avgBrightness);
+		};
+
+		img.onerror = () => reject("Pic not loaded");
+	});
+}
+
+function getContrastColor(brightness) {
 	return brightness > 128 ? "rgba(0, 0, 0, 0.9)" : "rgba(255, 255, 255, 0.9)";
 }
 

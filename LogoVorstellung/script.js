@@ -51,6 +51,7 @@ Mit kompetenter Beratung, fairen Preisen und schneller Lieferung machen wir dein
 		Willkommen bei Ihrer Kanzlei für Strafrecht in Karlburg
 		In unserer Kanzlei stehen Sie als Mandant im Mittelpunkt. Wir vertreten Sie engagiert und kompetent in sämtlichen Bereichen des Strafrechts – von der Beratung in Ermittlungsverfahren über die Verteidigung in Gerichtsprozessen bis hin zur Begleitung in allen Phasen des Strafverfahrens. Ihr Recht auf eine faire Behandlung und auf professionelle Verteidigung ist unser oberstes Anliegen.
 		Unser erfahrenes Team unterstützt Sie bei:
+		
 		• Strafverteidigung: Wir vertreten Sie in allen Strafsachen, seien es Wirtschaftsstraftaten, Verkehrsdelikte, Betäubungsmittelstrafrecht oder andere strafbare Handlungen.
 		• Beratung bei Ermittlungsverfahren: Wir stehen Ihnen bereits in einem frühen Stadium zur Seite, prüfen Ihre Rechte und entwickeln gemeinsam die beste Verteidigungsstrategie.
 		• Opfervertretung im Strafverfahren: Auch Geschädigte eines Verbrechens finden bei uns rechtliche Unterstützung, um ihre Ansprüche geltend zu machen und ihre Interessen zu wahren.
