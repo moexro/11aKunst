@@ -17,7 +17,7 @@ const logo = document.getElementById("logo");
 
 async function setLogo(type) {
 	const exts = ["jpg", "PNG", "webp", "jpeg"];
-	const basePath = `../Firmen/images/logo_` + type;
+	const basePath = `../Firmen/images/logo_${type}`;
 
 	for (const ext of exts) {
 		const url = `${basePath}.${ext}`;
