@@ -34,9 +34,6 @@ setLogo(type);
 const text = document.getElementById("sec");
 text.textContent = firms[type].text;
 
-const favicon = document.getElementById("favicon");
-favicon.href = `../Firmen/images/logo_${type}.jpg`;
-
 const title = document.getElementById("title");
 title.textContent = firms[type].firma;
 
