@@ -16,7 +16,7 @@ if (brand && firms[type] && firms[type].firma) {
 const logo = document.getElementById("logo");
 
 async function setLogo(type) {
-	const exts = ["jpg", "PNG", "webp", "jpeg"];
+	const exts = ["jpg", "PNG", "png","webp", "jpeg"];
 	const basePath = `../Firmen/images/logo_${type}`;
 
 	for (const ext of exts) {
