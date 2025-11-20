@@ -69,12 +69,6 @@ a {
 	z-index: 1000;
 }
 
-.container .logo {
-	height: 64px;
-	background-repeat: no-repeat;
-	background-size: cover; /* passt Bild an */
-	background-position: center;
-}
 
 .container {
 	background-color: var(--container);
@@ -96,7 +90,7 @@ a {
 	white-space: pre-line;
 }
 
-#logo {
+#favicon {
 	height: 128px; /* Höhe des Logos */
 	display: block;
 	background-size: contain; /* skaliert das Bild korrekt */
