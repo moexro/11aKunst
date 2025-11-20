@@ -23,7 +23,8 @@ async function setLogo(type) {
 		const url = `${basePath}.${ext}`;
 		const res = await fetch(url, { method: "GET" });
 		if (res.ok) {
-			logo.style.backgroundImage = `url(${url})`;
+			logo.src = url;
+			console.log(url);
 			return;
 		}
 	}

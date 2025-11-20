@@ -21,7 +21,7 @@ body {
 	color: var(--text-color);
 	box-sizing: border-box;
 	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-	margin-top: 64px;
+	margin-top: 96px;
 }
 
 body {
@@ -69,7 +69,6 @@ a {
 	z-index: 1000;
 }
 
-
 .container {
 	background-color: var(--container);
 	box-shadow: 4px 16px 20px rgba(0, 0, 0, 0.3);
@@ -92,16 +91,15 @@ a {
 
 #logo {
 	height: 128px; /* Höhe des Logos */
-	display: block;
 	background-size: contain; /* skaliert das Bild korrekt */
 	background-repeat: no-repeat;
 	background-position: center;
-	
 }
 
 #back {
 	margin-bottom: 16px;
 	width: 100px;
+
 	z-index: 100;
 	color: var(--text-color);
 	width: 100%;
