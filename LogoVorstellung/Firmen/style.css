@@ -98,9 +98,11 @@ a {
 
 #logo {
 	height: 128px; /* Höhe des Logos */
+	display: block;
 	background-size: contain; /* skaliert das Bild korrekt */
 	background-repeat: no-repeat;
 	background-position: center;
+	
 }
 
 #back {
