@@ -59,6 +59,62 @@ Mit kompetenter Beratung, fairen Preisen und schneller Lieferung machen wir dein
 		Wir legen besonderen Wert auf persönliche Betreuung, Diskretion und schnelle Reaktionszeiten. Unser Ziel ist es, für Sie Klarheit und Sicherheit in oft komplexen und belastenden Situationen zu schaffen. Vertrauen Sie auf unsere Expertise und unseren Einsatz für Ihre Rechte.
 		Kontaktieren Sie uns noch heute für eine erste Beratung. Wir beraten Sie verständlich, verständnisvoll und jederzeit professionell. `,
 	},
+	ElliSchmitt: {
+		firma: "Vermögensberatung Schmitt",
+		text: `Sie suchen die richtige, unabhängige Finanzberatung?
+				Herzlich willkommen bei der 𝚅𝚎𝚛𝚖ö𝚐𝚎𝚗𝚜𝚋𝚎𝚛𝚊𝚝𝚞𝚗𝚐 𝚂𝚌𝚑𝚖𝚒𝚝𝚝!
+
+				Wir liefern nachvollziehbare Lösungen und bieten Ihnen die Freiheit, unsere Arbeit jederzeit ohne Kostenrisiko zu testen.
+
+				Überzeugen Sie sich selbst, warum wir der ideale Partner für Ihre finanzielle Zukunft sind.`,
+	},
+	AntonellaRohm: {
+		firma: "ARchitecture",
+		text: `ARchitecture steht für klare Linien, innovative Lösungen und eine Architektur, die Menschen in den Mittelpunkt stellt. Wir entwickeln Gebäude, die ästhetisch überzeugen, funktional begeistern und nachhaltig wirken. Unser Anspruch: Architektur, die heute beeindruckt und morgen Bestand hat.`,
+	},
+	LeniBrand: {
+		firma: "Brand New Fashion",
+		text: `Brand New Fashion - Lust auf heiße Styles?
+				Willkommen bei Brand New Fashion - der Adresse für alle, die Mode nicht nur tragen, sondern leben. Wir stehen für selbstbewusste Looks, mutige Trends und Pieces, die deinen Alltag genauso besonders machen wie deine Nights out.
+
+				Du hast Lust auf heiße Styles, frische Fashion-Highlights und unverwechselbare Outfits? Dann bist du bei uns genau richtig. Unsere Kollektionen verbinden aktuelle Trends mit hochwertigen Materialien und einem Look, der sofort auffällt. Egal ob Streetstyle, classy Elegance oder edgy Must-Haves – wir liefern dir Mode, die dich zum Statement macht.
+
+				Du willst mehr wissen oder hast Fragen?
+				Wir sind jederzeit für dich da:
+				Telefon: 01234 / 567890
+				E-Mail: support@brandnewfashion.de`,
+	},
+	LaurinBetz: {
+		firma: "Binder",
+		text: `Willkommen bei Binder - der Ort, an dem echte Verbindungen entstehen.
+				Binder bringt Menschen zusammen, die wirklich zusammenpassen. Mit einem klaren, modernen Design, smarten Matching-Funktionen und einem sicheren Umfeld macht Binder Dating wieder einfach – und ein bisschen aufregender.
+				Egal ob du auf der Suche nach etwas Lockerem, einer tiefen Beziehung oder einfach neuen Kontakten bist: Binder hilft dir dabei, genau die Menschen zu finden, die zu dir passen.
+				Binder - weniger wischen, mehr verbinden.`,
+	},
+	MoritzHuebner: {
+		firma: "FRST - Explore Further",
+		text: `FRST – Explore Further.
+
+				Natur beginnt hier.
+				Willkommen bei FRST, deiner Marke für hochwertige Outdoor- und Wanderausrüstung. Inspiriert von der Stille des Waldes, der Kraft der Berge und der Freiheit des Weges entwickeln wir Produkte, die dich bei jedem Abenteuer begleiten – egal, ob Tageswanderung oder mehrtägige Trekkingtour.
+
+				Unsere Mission
+				FRST steht für mehr als nur Wandern.
+				Wir glauben an Bewegung, an bewusstes Erleben und an den respektvollen Umgang mit der Natur. Unsere Ausrüstung verbindet Funktionalität, Komfort und nachhaltige Materialien – für Menschen, die draußen zuhause sind.`,
+	},
+	PaulWeißenberger: {
+		firma: "Wwater",
+		text: `Unser Wasser steht für höchste Reinheit und optimale Balance: Mit einem perfekt ausbalancierten Mikrosiemenswert – weder zu hoch noch zu niedrig – bietet es die ideale Mineralisierung für den täglichen Genuss. Diese außergewöhnliche Wasserqualität macht es besonders verträglich, erfrischend und leistungsfördernd. Sportler schätzen es als zuverlässigen Begleiter, der den Körper optimal unterstützt und zur schnellen Regeneration beiträgt.`,
+	},
+	PhilippHuebner: {
+		firma: "SUMIT",
+	},
+	PhilippSchild: {
+		firma: "SchildSafeSecuritySystems",
+		text: `Sichern Sie Ihre digitalen Werte mit Schild Safe Security Systems: Unsere Cyber-Security-Experten bieten maßgeschneiderte Schutzlösungen, kombiniert mit höchster Vertraulichkeit und Zuverlässigkeit.
+Vertrauen Sie auf modernste Technologien, Strategien aus gesetzlichen Grauzonen und umfassenden Support für maximale Sicherheit Ihres Unternehmens.
+`,
+	},
 };
 
 let abgaben = 0;

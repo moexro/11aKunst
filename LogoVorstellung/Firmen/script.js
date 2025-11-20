@@ -33,7 +33,11 @@ async function setLogo(type) {
 setLogo(type);
 
 const text = document.getElementById("sec");
-text.textContent = firms[type].text;
+if (firms[type].text) {
+	text.textContent = firms[type].text;
+} else {
+	text.style.display = "none";
+}
 
 const title = document.getElementById("title");
 title.textContent = firms[type].firma;
