@@ -115,15 +115,26 @@ Mit kompetenter Beratung, fairen Preisen und schneller Lieferung machen wir dein
 Vertrauen Sie auf modernste Technologien, Strategien aus gesetzlichen Grauzonen und umfassenden Support für maximale Sicherheit Ihres Unternehmens.
 `,
 	},
+	HugoFreitag: {
+		firma: "Freitag und Recht",
+		text: `Unsere Kanzlei bietet klare, verlässliche Rechtsberatung im Zivil-, Vertrags- und allgemeinen Privatrecht. Wir vertreten Mandanten effizient, praxisnah und mit konsequenter Durchsetzung ihrer Ansprüche. Ziel ist eine schnelle, rechtssichere Lösung ohne unnötigen Aufwand.`,
+	},
+	BryaneKanaTsague: {
+		firma: "Peak Motion",
+		text: `Peak Motion steht für Abenteuer, Freiheit und den Drive, die eigene Komfortzone zu verlassen. Wir entwickeln moderne, funktionale Wanderausrüstung speziell für junge Leute, die mehr suchen als nur den nächsten Gipfel – nämlich echte Erlebnisse. Unsere Produkte verbinden stylisches Design mit zuverlässiger Performance, damit du in jedem Terrain sicher und selbstbewusst unterwegs bist.
+				Peak Motion - Move Higher. Live Freely.`,
+	},
 };
 
 let abgaben = 0;
+let count = 0;
 
 function set() {
 	const container = document.getElementById("sec");
 
 	Object.entries(vorstellungen).forEach(([key, data]) => {
 		const firmname = data.firma;
+		count = count + 1;
 		const btn = document.createElement("button");
 
 		btn.type = "button";
@@ -138,6 +149,7 @@ function set() {
 
 		container.appendChild(btn);
 	});
+	console.log(count);
 
 	// Theme-Color anhand des body::before-Hintergrunds setzen
 	const style = getComputedStyle(document.body, "::before");
