@@ -124,6 +124,9 @@ Vertrauen Sie auf modernste Technologien, Strategien aus gesetzlichen Grauzonen 
 		text: `Peak Motion steht für Abenteuer, Freiheit und den Drive, die eigene Komfortzone zu verlassen. Wir entwickeln moderne, funktionale Wanderausrüstung speziell für junge Leute, die mehr suchen als nur den nächsten Gipfel – nämlich echte Erlebnisse. Unsere Produkte verbinden stylisches Design mit zuverlässiger Performance, damit du in jedem Terrain sicher und selbstbewusst unterwegs bist.
 				Peak Motion - Move Higher. Live Freely.`,
 	},
+	FelicitasBuhlmann: {
+		
+	}
 };
 
 let abgaben = 0;
