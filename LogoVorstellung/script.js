@@ -95,12 +95,12 @@ Mit kompetenter Beratung, fairen Preisen und schneller Lieferung machen wir dein
 		firma: "FRST - Explore Further",
 		text: `FRST – Explore Further.
 
-				Natur beginnt hier.
-				Willkommen bei FRST, deiner Marke für hochwertige Outdoor- und Wanderausrüstung. Inspiriert von der Stille des Waldes, der Kraft der Berge und der Freiheit des Weges entwickeln wir Produkte, die dich bei jedem Abenteuer begleiten – egal, ob Tageswanderung oder mehrtägige Trekkingtour.
+		Natur beginnt hier.
+		Willkommen bei FRST, deiner Marke für hochwertige Outdoor- und Wanderausrüstung. Inspiriert von der Stille des Waldes, der Kraft der Berge und der Freiheit des Weges entwickeln wir Produkte, die dich bei jedem Abenteuer begleiten – egal, ob Tageswanderung oder mehrtägige Trekkingtour.
 
-				Unsere Mission
-				FRST steht für mehr als nur Wandern.
-				Wir glauben an Bewegung, an bewusstes Erleben und an den respektvollen Umgang mit der Natur. Unsere Ausrüstung verbindet Funktionalität, Komfort und nachhaltige Materialien – für Menschen, die draußen zuhause sind.`,
+		Unsere Mission
+		FRST steht für mehr als nur Wandern.
+		Wir glauben an Bewegung, an bewusstes Erleben und an den respektvollen Umgang mit der Natur. Unsere Ausrüstung verbindet Funktionalität, Komfort und nachhaltige Materialien – für Menschen, die draußen zuhause sind.`,
 	},
 	PaulWeißenberger: {
 		firma: "Wwater",
@@ -112,7 +112,7 @@ Mit kompetenter Beratung, fairen Preisen und schneller Lieferung machen wir dein
 	PhilippSchild: {
 		firma: "SchildSafeSecuritySystems",
 		text: `Sichern Sie Ihre digitalen Werte mit Schild Safe Security Systems: Unsere Cyber-Security-Experten bieten maßgeschneiderte Schutzlösungen, kombiniert mit höchster Vertraulichkeit und Zuverlässigkeit.
-Vertrauen Sie auf modernste Technologien, Strategien aus gesetzlichen Grauzonen und umfassenden Support für maximale Sicherheit Ihres Unternehmens.
+		Vertrauen Sie auf modernste Technologien, Strategien aus gesetzlichen Grauzonen und umfassenden Support für maximale Sicherheit Ihres Unternehmens.
 `,
 	},
 	HugoFreitag: {
@@ -122,11 +122,22 @@ Vertrauen Sie auf modernste Technologien, Strategien aus gesetzlichen Grauzonen 
 	BryaneKanaTsague: {
 		firma: "Peak Motion",
 		text: `Peak Motion steht für Abenteuer, Freiheit und den Drive, die eigene Komfortzone zu verlassen. Wir entwickeln moderne, funktionale Wanderausrüstung speziell für junge Leute, die mehr suchen als nur den nächsten Gipfel – nämlich echte Erlebnisse. Unsere Produkte verbinden stylisches Design mit zuverlässiger Performance, damit du in jedem Terrain sicher und selbstbewusst unterwegs bist.
-				Peak Motion - Move Higher. Live Freely.`,
+		Peak Motion - Move Higher. Live Freely.`,
 	},
 	FelicitasBuhlmann: {
-		
-	}
+		firma: "Anansi",
+		text: "Wir spinnen dein Web.",
+	},
+	AntoniaWiesmann: {
+		firma: "Arianrhod",
+		text: `Arianrhod - Wasser, das strahlt wie Mondlicht
+		Unser Wasser trägt den Namen der keltischen Mondgöttin Arianrhod - Sinnbild für Reinheit, Klarheit und Erneuerung. Inspiriert von ihrem silbrigen Licht haben wir ein Wasser geschaffen, das für echte, natürliche Reinheit steht.
+		Ausgewogene Mineralien. Reine Hydration. Ein sichtbar frischer Glow.
+		Dank eines sorgfältig abgestimmten Mineraliengehalts versorgt Arianrhod Water deinen Körper optimal mit Feuchtigkeit. Diese tiefe Hydration unterstützt eine glatte, pralle und klar wirkende Haut – die perfekte Basis für den beliebten Glass-Skin-Look.
+		Schon nach 30 Tagen regelmäßigen Trinkens berichten viele Nutzer:innen von einer sichtbar klareren, feineren und gleichmäßigeren Hautstruktur.
+		Erlebe Wasser, das nicht nur erfrischt - sondern leuchten lässt.
+		Arianrhod Water. Stay Hydrated. Stay Luminous.`,
+	},
 };
 
 let abgaben = 0;
